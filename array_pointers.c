@@ -11,7 +11,9 @@ int main(){
     printf("%lu\n", sizeof(num));
     printf("%p\n", num);
     printf("%p\n", &num[0]);
-    printf("%d", *num);
+    printf("%d\n", *num);
+    printf("%d\n", *(num + 1));
+    printf("%d", *(num + 2));
 
     printf("\n");
     return 0;
