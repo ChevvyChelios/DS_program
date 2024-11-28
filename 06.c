@@ -63,20 +63,20 @@ int main(){
     int size2 = sizeof(array2) / sizeof(array2[0]);
     int size3 = sizeof(array3) / sizeof(array3[0]);
 
-    printf("\nOriginal array1: ");
+    printf("\nOriginal array 1: ");
     display(array1, size1);
     printf("Sorted using bubble sort: ");
     bubbleSort(array1, size1);
 
-    printf("\nOriginal array2: ");
+    printf("\nOriginal array 2: ");
     display(array2, size2);
-    printf("Sorted using insertion sort: ");
-    insertionSort(array2, size2);
-
-    printf("\nOriginal array3: ");
-    display(array3, size3);
     printf("Sorted using selection sort: ");
-    selectionSort(array3, size3);
+    selectionSort(array2, size2);
+
+    printf("\nOriginal array 3: ");
+    display(array3, size3);
+    printf("Sorted using insertion sort: ");
+    insertionSort(array3, size3);
 
     return 0;
 }
