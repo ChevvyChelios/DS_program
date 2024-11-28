@@ -60,7 +60,7 @@ int main(){
 
     printf("Enter the values: \n");
     for (i = 0; i < size; i++){
-        printf("Enter value %d: ", i+1);
+        // printf("Enter value %d: ", i+1);
         scanf("%d", &arr[i]);
     }
 

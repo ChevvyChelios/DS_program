@@ -31,7 +31,7 @@ void deleteFromLocation(int arr[], int *size){
         }
         (*size)--;
     } else {
-        printf("Invalid locationLocation should be between 0 and %d.\n", *size - 1);
+        printf("Invalid location, Location should be between 0 and %d.\n", *size - 1);
     }
 
     printf("Array after deleting element at loc %d: ", loc);
@@ -39,15 +39,8 @@ void deleteFromLocation(int arr[], int *size){
 }
 
 int main(){
-    int arr[MAX], size, i;
-    printf("Enter the size of the array: ");
-    scanf("%d", &size);
-
-    printf("Enter the values: \n");
-    for (i = 0; i < size; i++){
-        printf("Enter value %d: ", i+1);
-        scanf("%d", &arr[i]);
-    }
+    int arr[MAX] = {10,20,30,40,50};
+    int size = 5;
 
     printf("Original array: ");
     display(arr, size);

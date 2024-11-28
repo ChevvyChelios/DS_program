@@ -1,16 +1,15 @@
 #include <stdio.h>
 
 int main() {
-    int arr[5] = {1, 2, 3, 4, 5}; // declare and initialize an array
+    int arr[] = {2, 5, 1, 6, 4};
     int i;
 
-    printf("Original array: ");
+    printf("Original array : ");
     for (i = 0; i < 5; i++) {
-        printf("%d ", arr[i]);
+        printf(" %d ", arr[i]);
     }
     printf("\n");
 
-    // traverse the array and add 5 to each element
     for (i = 0; i < 5; i++) {
         arr[i] = arr[i] + 5;
     }

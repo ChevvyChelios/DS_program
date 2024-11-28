@@ -9,11 +9,20 @@ Data Structure Practical
 5.	Write a program to delete an element from an array from the following positions:
 •	From the end of the array
 •	From any desired location
+
+
+
+
 6.	Write a program to sort an array using the following sorting techniques:
 •	Bubble sort
 •	Insertion sort
 •	Selection sort
 7.	Write an interactive program to create an array of 20 records having following field: name and marks. Sort the record (based on marks) using bubble sort. Search for a record using binary search. 
+
+
+
+
+
 8.	Write a program to merge two sorted arrays.
 9.	Write a program to find the sum of two matrices.
 10.	Write a program to find the transpose of a matrix.

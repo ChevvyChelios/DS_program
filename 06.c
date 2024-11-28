@@ -1,11 +1,7 @@
 #include<stdio.h>
-#define MAX 20
-
 void display(int arr[], int size){
-    int i;
-    for (i = 0; i < size; i++) {
+    for(int i=0; i<size; i++)
         printf("%d ", arr[i]);
-    }
     printf("\n");
 }
 
@@ -21,6 +17,7 @@ void bubbleSort(int arr[], int size){
             }
         }
     }
+    display(arr, size);
 }
 
 void insertionSort(int arr[], int size) {
@@ -35,6 +32,7 @@ void insertionSort(int arr[], int size) {
 
         arr[j+1] = key;
     }
+    display(arr, size);
 }
 
 void selectionSort(int arr[], int size) {
@@ -52,31 +50,33 @@ void selectionSort(int arr[], int size) {
         arr[minIndex] = arr[i];
         arr[i] = temp;
     }
+    display(arr, size);
 }
 
+
 int main(){
+    int array1[] = {34, 12, 5, 78, 23, 45};
+    int array2[] = {9, 3, 67, 21, 45, 88};
+    int array3[] = {15, 42, 7, 29, 11, 56};
 
-    int arr[MAX], size, i;
-    printf("Enter the size of the array: ");
-    scanf("%d", &size);
+    int size1 = sizeof(array1) / sizeof(array1[0]);
+    int size2 = sizeof(array2) / sizeof(array2[0]);
+    int size3 = sizeof(array3) / sizeof(array3[0]);
 
-    // int arb[] = {1,2,3,4,5};
-    // int si =  sizeof(arb)/sizeof(arb[0]);
-    // printf("%d\n", si);
+    printf("\nOriginal array1: ");
+    display(array1, size1);
+    printf("Sorted using bubble sort: ");
+    bubbleSort(array1, size1);
 
-    printf("Enter the values: ");
-    for (i = 0; i < size; i++){
-        scanf("%d", &arr[i]);
-    }
+    printf("\nOriginal array2: ");
+    display(array2, size2);
+    printf("Sorted using insertion sort: ");
+    insertionSort(array2, size2);
 
-    printf("Original array: ");
-    display(arr, size);
-
-    // bubbleSort(arr, size);
-    // insertionSort(arr, size);
-    selectionSort(arr, size);
-    printf("After Sorting: ");
-    display(arr, size);
+    printf("\nOriginal array3: ");
+    display(array3, size3);
+    printf("Sorted using selection sort: ");
+    selectionSort(array3, size3);
 
     return 0;
 }
